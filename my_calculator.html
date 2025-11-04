@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+   <div class="container">
+    <input type="text" class="set-num" id="display" readonly  style="width: 100%;font-size: 30px;text-align: right;">
+
+    <hr class="row">
+
+
+     <div class="flex-buttons">
+
+
+         <button id="btn-C" style="color:orange;" onclick="clearDisplay()">C</button>
+      <button id="btns" style="color:green;" onclick="backspace()">Prev</button>
+       <button id="btns" style="color:green;" onclick="percentage()">%</button>
+        <button id="btns" style="color:green; border: 0;font-size: 25px;" onclick="appendToDisplay('/')">/</button>
+
+
+     <button id="btn-t" onclick="appendToDisplay('7')">7</button>
+      <button id="btn-t" onclick="appendToDisplay('8')">8</button>
+       <button id="btn-t" onclick="appendToDisplay('9')">9</button>
+        <button id="btns" style="color:green;font-size: 25px;" onclick="appendToDisplay('*')">*</button>
+
+
+         <button id="btn-t" onclick="appendToDisplay('4')">4</button>
+      <button id="btn-t" onclick="appendToDisplay('5')">5</button>
+       <button id="btn-t" onclick="appendToDisplay('6')">6</button>
+        <button id="btns" style="color:green;font-size: 25px;" onclick="appendToDisplay('-')">-</button>
+
+
+         <button id="btn-t" onclick="appendToDisplay('1')">1</button>
+      <button id="btn-t" onclick="appendToDisplay('2')">2</button>
+       <button id="btn-t" onclick="appendToDisplay('3')">3</button>
+        <button id="btns" class="color" style="color:green;font-size: 25px;" onclick="appendToDisplay('+')">+</button>
+
+
+         <button id="btn-+" onclick="toggleSign()">+/-</button>
+      <button id="btn-t" onclick="appendToDisplay('0')">0</button>
+       <button id="btn-." onclick="appendToDisplay('.')">.</button>
+        <button id="btn-ts" style="background-color: green;border: 0;font-size: 25px;" onclick="calculateResult()">=</button>
+   </div>
+
+   </div>
+  <script src="calcu.js"></script>
+</html>
